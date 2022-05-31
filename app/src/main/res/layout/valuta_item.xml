@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_700"
+    android:elevation="4dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/nameValuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/euro"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            />
+
+        <TextView
+            android:id="@+id/nalichieTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nal"
+            app:layout_constraintTop_toBottomOf="@id/nameValuta"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/numTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ost"
+            app:layout_constraintTop_toBottomOf="@id/nalichieTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/pokupkaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pokupka"
+            app:layout_constraintTop_toBottomOf="@id/numTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/prodazhaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prodazha"
+            app:layout_constraintTop_toBottomOf="@id/pokupkaTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/otvetstveniyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otvet"
+            app:layout_constraintTop_toBottomOf="@id/prodazhaTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/adresTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adres"
+            app:layout_constraintTop_toBottomOf="@id/otvetstveniyTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/gorodTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gorod"
+            app:layout_constraintTop_toBottomOf="@id/adresTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/telefonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nomer_telefona"
+            app:layout_constraintTop_toBottomOf="@id/gorodTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

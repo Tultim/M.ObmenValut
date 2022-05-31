@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/titleAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/sdelkaoper"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/valutaNameAlertDialogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleAlertDialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="text"
+        android:background="@drawable/edittext_background"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/valuta"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:importantForAutofill="no"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/valutaNumAlertDialogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/valutaNameAlertDialogEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="number"
+        android:background="@drawable/edittext_background"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/summ"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/valutaNumAlertDialogEditText"
+        android:layout_margin="40dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/prodazhaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prod"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-black"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pokupkaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poku"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-black"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

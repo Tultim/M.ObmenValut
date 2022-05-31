@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ObmenValut</string>
+    <string name="euro">EURO</string>
+    <string name="nal">Наличие :</string>
+    <string name="ost">Осталось :</string>
+    <string name="pokupka">Покупка :</string>
+    <string name="prodazha">Продажа :</string>
+    <string name="otvet">Ответственный :</string>
+    <string name="adres">Адрес :</string>
+    <string name="gorod">Город :</string>
+    <string name="nomer_telefona">Номер телефона :</string>
+    <string name="sdelkaoper">Сделка операций с валютой</string>
+    <string name="valuta">Валюта</string>
+    <string name="summ">Сумма</string>
+    <string name="prod">Продажа</string>
+    <string name="poku">Покупка</string>
+    <string name="count">Всего валют :</string>
+    <string name="changeKassir">Изменение информации о кассире</string>
+    <string name="kassiry">Кассиры :</string>
+    <string name="titleChangeUserInfo">Окно изменения информации о пользователе</string>
+    <string name="userName">Имя пользователя</string>
+    <string name="descriptionUserInfo">Для изменения информации о пользователе: напишите имя пользователя и нажмите соответствующую кноку</string>
+</resources>

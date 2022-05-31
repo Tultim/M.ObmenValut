@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.users.UserActivity">
+
+    <TextView
+        android:id="@+id/titleUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleChangeUserInfo"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/desicriptionUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descriptionUserInfo"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/titleUser"
+        android:layout_margin="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/desicriptionUser"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/nameEditTextUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:hint="@string/userName"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewUsers"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/nameEditTextUserInfo">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nameButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_weight="1"
+            android:text="Новое имя"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/adresButton"
+
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_weight="1"
+            android:text="Новый адрес"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/gorodButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_weight="1"
+            android:text="Новый город"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/telefonButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_weight="1"
+            android:text="Новый телефон"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
